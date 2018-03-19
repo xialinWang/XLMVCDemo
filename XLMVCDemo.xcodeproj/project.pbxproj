@@ -16,6 +16,9 @@
 		67D4CF4E205ABA860035DA98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D4CF4D205ABA860035DA98 /* main.m */; };
 		67D4CF58205ABA860035DA98 /* XLMVCDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D4CF57205ABA860035DA98 /* XLMVCDemoTests.m */; };
 		67D4CF63205ABA860035DA98 /* XLMVCDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D4CF62205ABA860035DA98 /* XLMVCDemoUITests.m */; };
+		67D4CF72205ABAB10035DA98 /* XLLoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D4CF71205ABAB10035DA98 /* XLLoginInfo.m */; };
+		67D4CF75205ABAC50035DA98 /* XLLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D4CF74205ABAC50035DA98 /* XLLoginView.m */; };
+		67D4CF7B205ABE490035DA98 /* UIAlertView+show.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D4CF7A205ABE490035DA98 /* UIAlertView+show.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		67D4CF5E205ABA860035DA98 /* XLMVCDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XLMVCDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D4CF62205ABA860035DA98 /* XLMVCDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLMVCDemoUITests.m; sourceTree = "<group>"; };
 		67D4CF64205ABA860035DA98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67D4CF70205ABAB10035DA98 /* XLLoginInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLLoginInfo.h; sourceTree = "<group>"; };
+		67D4CF71205ABAB10035DA98 /* XLLoginInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLLoginInfo.m; sourceTree = "<group>"; };
+		67D4CF73205ABAC50035DA98 /* XLLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLLoginView.h; sourceTree = "<group>"; };
+		67D4CF74205ABAC50035DA98 /* XLLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLLoginView.m; sourceTree = "<group>"; };
+		67D4CF79205ABE490035DA98 /* UIAlertView+show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+show.h"; sourceTree = "<group>"; };
+		67D4CF7A205ABE490035DA98 /* UIAlertView+show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+show.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,16 +112,10 @@
 		67D4CF3A205ABA860035DA98 /* XLMVCDemo */ = {
 			isa = PBXGroup;
 			children = (
-				67D4CF3B205ABA860035DA98 /* AppDelegate.h */,
-				67D4CF3C205ABA860035DA98 /* AppDelegate.m */,
-				67D4CF3E205ABA860035DA98 /* ViewController.h */,
-				67D4CF3F205ABA860035DA98 /* ViewController.m */,
-				67D4CF41205ABA860035DA98 /* Main.storyboard */,
-				67D4CF47205ABA860035DA98 /* Assets.xcassets */,
-				67D4CF49205ABA860035DA98 /* LaunchScreen.storyboard */,
-				67D4CF4C205ABA860035DA98 /* Info.plist */,
-				67D4CF4D205ABA860035DA98 /* main.m */,
-				67D4CF44205ABA860035DA98 /* XLMVCDemo.xcdatamodeld */,
+				67D4CF7C205ABF200035DA98 /* otherClass */,
+				67D4CF78205ABAE30035DA98 /* Control */,
+				67D4CF77205ABAD80035DA98 /* Model */,
+				67D4CF76205ABACE0035DA98 /* View */,
 			);
 			path = XLMVCDemo;
 			sourceTree = "<group>";
@@ -133,6 +136,50 @@
 				67D4CF64205ABA860035DA98 /* Info.plist */,
 			);
 			path = XLMVCDemoUITests;
+			sourceTree = "<group>";
+		};
+		67D4CF76205ABACE0035DA98 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67D4CF73205ABAC50035DA98 /* XLLoginView.h */,
+				67D4CF74205ABAC50035DA98 /* XLLoginView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67D4CF77205ABAD80035DA98 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67D4CF70205ABAB10035DA98 /* XLLoginInfo.h */,
+				67D4CF71205ABAB10035DA98 /* XLLoginInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67D4CF78205ABAE30035DA98 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				67D4CF3E205ABA860035DA98 /* ViewController.h */,
+				67D4CF3F205ABA860035DA98 /* ViewController.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		67D4CF7C205ABF200035DA98 /* otherClass */ = {
+			isa = PBXGroup;
+			children = (
+				67D4CF79205ABE490035DA98 /* UIAlertView+show.h */,
+				67D4CF7A205ABE490035DA98 /* UIAlertView+show.m */,
+				67D4CF3B205ABA860035DA98 /* AppDelegate.h */,
+				67D4CF3C205ABA860035DA98 /* AppDelegate.m */,
+				67D4CF41205ABA860035DA98 /* Main.storyboard */,
+				67D4CF47205ABA860035DA98 /* Assets.xcassets */,
+				67D4CF49205ABA860035DA98 /* LaunchScreen.storyboard */,
+				67D4CF4C205ABA860035DA98 /* Info.plist */,
+				67D4CF4D205ABA860035DA98 /* main.m */,
+				67D4CF44205ABA860035DA98 /* XLMVCDemo.xcdatamodeld */,
+			);
+			path = otherClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,9 +315,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D4CF72205ABAB10035DA98 /* XLLoginInfo.m in Sources */,
 				67D4CF46205ABA860035DA98 /* XLMVCDemo.xcdatamodeld in Sources */,
 				67D4CF40205ABA860035DA98 /* ViewController.m in Sources */,
 				67D4CF4E205ABA860035DA98 /* main.m in Sources */,
+				67D4CF7B205ABE490035DA98 /* UIAlertView+show.m in Sources */,
+				67D4CF75205ABAC50035DA98 /* XLLoginView.m in Sources */,
 				67D4CF3D205ABA860035DA98 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,8 +485,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EPT77JB8HJ;
-				INFOPLIST_FILE = XLMVCDemo/Info.plist;
+				DEVELOPMENT_TEAM = DG985695EK;
+				INFOPLIST_FILE = "$(SRCROOT)/XLMVCDemo/otherClass/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XL.XLMVCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -449,8 +500,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EPT77JB8HJ;
-				INFOPLIST_FILE = XLMVCDemo/Info.plist;
+				DEVELOPMENT_TEAM = DG985695EK;
+				INFOPLIST_FILE = "$(SRCROOT)/XLMVCDemo/otherClass/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XL.XLMVCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
